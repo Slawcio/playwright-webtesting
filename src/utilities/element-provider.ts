@@ -1,5 +1,5 @@
 import { Page } from '../pages/Page.ts';
-import { PageFactory } from '../pages/pageFactory.ts';
+import { PageFactory } from '../pages/page-factory.ts';
 import { Locator } from 'playwright';
 
 export class ElementProvider {
@@ -13,8 +13,7 @@ export class ElementProvider {
 		while (elapsedTime < ElementProvider.timeout) {
 			try {
 				const currentPage: Page = await PageFactory.getCurrentPage();
-				const element = await currentPage.getElement(selectorName);
-				return element;  // Return if element is successfully retrieved.
+				return await currentPage.getElement(selectorName);
 			} catch (error) {
 				// If an error occurs, wait for the interval then retry.
 				await new Promise(resolve => setTimeout(resolve, ElementProvider.interval));

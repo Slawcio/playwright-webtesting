@@ -21,10 +21,12 @@ user is directed to the homepage.
    • Select a product from the search results and navigate to its details page.
    • Add the product to the shopping cart.
    • Verify that the cart updates correctly with the selected item
-   Tasks:
-   Task 1: Test Implementation
+4. Task 1: Test Implementation
    • Implement automated tests in Cypress/Playwright for the outlined scenarios. Ensure the
    tests are modular and reusable.
+
+#### Chosen e-commerce:
+   EURO RTV AGD
     
 ## Description
 This project implements a unique Page Factory architecture, enhancing the standard Page Object Model (POM) framework for large-scale web automation projects. The project focuses on reducing boilerplate code and improving scalability. Serving as a proof of concept, it currently has some vulnerabilities:
