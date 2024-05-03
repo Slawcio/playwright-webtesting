@@ -1,45 +1,38 @@
 import { page } from '../world.ts';
 import { Environments } from '../utilities/environments.ts';
+import { Locator } from 'playwright';
 
 export abstract class Page {
 
     protected abstract readonly pageName: string | undefined;
     protected abstract readonly locatorsMap: Map<string, string> | undefined;
 
-    public getPageName() {
-        return this.pageName;
-    }
-
     public async isExisting(): Promise<boolean> {
         await page.waitForLoadState();
         if (this.pageName) {
-            const selector = this.getSelector(this.pageName);
-            const element = await page.locator(selector);
-            if(await element.count() == 1){
-                return true;
-            } else {
-                return false;
-            }
+            const selector: string = this.getSelector(this.pageName);
+            const element: Locator = await page.locator(selector);
+            return await element.count() == 1;
         } else {
             throw new Error(`Page name is undefined.`);
         }
     }
 
-    public async getElement(selectorName: string) {
-        const selector = this.getSelector(selectorName);
+    public async getElement(selectorName: string): Promise<Locator> {
+        const selector: string = this.getSelector(selectorName);
         return page.locator(selector).first();
     }
 
-    public async getElements(selectorName: string){
-        const selector = this.getSelector(selectorName);
+    public async getElements(selectorName: string): Promise<Locator[]> {
+        const selector: string = this.getSelector(selectorName);
         return page.locator(selector).all();
     }
 
-    private getSelector(selectorName: string) {
+    private getSelector(selectorName: string): string {
         if (!this.locatorsMap) {
             throw new Error("Locators map is undefined.");
         }
-        const selector  = this.locatorsMap.get(selectorName);
+        const selector: string | undefined = this.locatorsMap.get(selectorName);
         if (!selector) {
             throw new Error(`selectorName: "${selectorName}" does not match any locatorsMap in page: "${this.pageName}"`);
         }
