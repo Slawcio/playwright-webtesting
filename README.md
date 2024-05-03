@@ -1,16 +1,30 @@
-# Puppy Desktop Test Framework
+# Playwright + Cucumber Test Framework
 
 ## Tests definition and author commentary:
 
-1. View details for the puppy Hanna, return to the puppy list
-2. Verify that the puppy Maggie May is on the first page
-3. Verify that the puppy Tipsy is on the second page
-4. View the details for Twinky, and verify that their adoption fee is $22.50
-5. View the details for Spud, click the Adopt Me! button, and then click the change your mind button
-6. View the details for Hanna, click the Adopt Me! button, click the Adopt Another Puppy button, and adopt Maggie Mae.
-7. Complete the adoption with credit card, and verify the adoption has been completed
-8. Adopt Brook and add a travel carrier, and verify that the total amount has increased by the price of the carrier
-9. Adopt Brook and Maggie Mae. Add a first vet visit and a collar and leash for Brook, and add a travel carrier for Maggie Mae. Complete the adoption with a credit card, and verify the adoption has been completed
+Task: E-commerce Website Testing
+Objective: Validate the functionality of key features on an e-commerce website using typescript and
+cypress/playwright.
+Scenario to Test:
+1.User Registration and Login:
+• Navigate to the e-commerce website's signup page.
+• Create a new user account by entering a unique username, email, and password. Handle
+any user input validations.
+• Verify successful registration and redirect to the login page.
+• Log in with the newly created credentials and confirm that the login is successful, and the
+user is directed to the homepage.
+2. Product Search and Filter:
+   • Use the search function to find products related to "electronics."
+   • Apply filters to narrow down the search results to items within a specific range.
+   • Verify that the displayed products match the search criteria and filters applied.
+3. Adding Items to Cart:
+   • Select a product from the search results and navigate to its details page.
+   • Add the product to the shopping cart.
+   • Verify that the cart updates correctly with the selected item
+   Tasks:
+   Task 1: Test Implementation
+   • Implement automated tests in Cypress/Playwright for the outlined scenarios. Ensure the
+   tests are modular and reusable.
 
 #### General outcomes
 - https://spartantest-puppies.herokuapp.com/ should be equipped with aut-id. Most pages do not have them at at all.
