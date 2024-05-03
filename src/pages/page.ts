@@ -1,4 +1,4 @@
-import { page } from '../steps/world.ts';
+import { page } from '../world.ts';
 import { Environments } from '../utilities/environments.ts';
 
 export abstract class Page {
