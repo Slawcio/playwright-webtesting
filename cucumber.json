@@ -1,0 +1,9 @@
+{
+    "default": {
+        "parallel": 2,
+        "format": ["html:cucumber-report.html"],
+        "paths": ["src/features/*.feature"],
+        "import": ["src/steps/*.steps.ts"],
+        "loader": ["ts-node/esm"]
+    }
+}

@@ -4,10 +4,6 @@
       "module": "ESNext",
       "types": [
           "node",
-          "@wdio/globals/types",
-          "expect-webdriverio",
-          "@wdio/cucumber-framework",
-          "@wdio/devtools-service"
       ],
       "target": "es2022",
       "allowSyntheticDefaultImports": true,
@@ -15,7 +11,7 @@
       "esModuleInterop": true,
       "strictNullChecks": true,
       "experimentalDecorators": true,
-      "noImplicitAny": true,
-      "strict": true
+      "noImplicitAny": false,
+      "strict": false
   },
 }
