@@ -10,6 +10,8 @@ When('I click {string}', async (selectorName: string) => {
 });
 
 When('I type {string} into {string}', async (text: string, elementName: string) => {
+    if(text.includes("random"))
+        text = Utils.getRandomValueBasedOnText(text);
     await (await ElementProvider.getElement(elementName)).fill(text);
 });
 
@@ -19,6 +21,10 @@ When('I select {string} from dropdown {string}', async (text: string, elementNam
 
 Then('I see {string}', async (selectorName: string) => {
     await expect(await ElementProvider.getElement(selectorName)).toBeVisible();
+});
+
+Then('I dont see {string}', async (selectorName: string) => {
+    await expect(await ElementProvider.getElement(selectorName)).not.toBeVisible();
 });
 
 Then('I see element {string} displays text {string}', async (selectorName: string, textToValidate: string) => {

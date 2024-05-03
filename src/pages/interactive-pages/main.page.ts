@@ -7,7 +7,8 @@ export default new class MainPage extends Page {
         [this.pageName,'ems-euro-mobile-home-page'],
 
         //header
-        ['my account button', '.account__user']
+        ['my account box', '.account__user'],
+        ['accept cookie','#onetrust-accept-btn-handler']
     ]);
 
 }

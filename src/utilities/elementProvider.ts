@@ -4,7 +4,7 @@ import { Locator } from 'playwright';
 
 export class ElementProvider {
 
-	public static timeout: number = 30000; // Default timeout in milliseconds
+	public static timeout: number = 29000; // Default timeout in milliseconds
 	public static interval: number = 100; // Default interval in milliseconds
 
 	public static async getElement(selectorName: string): Promise<Locator> {

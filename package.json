@@ -5,26 +5,19 @@
     "main": "",
     "type": "module",
     "scripts": {
-        "test": "cucumber-js --config cucumber.json --tags",
-        "debug": "wdio ./wdio.conf.desktop.ts --inspect --cucumberOpts.tagExpression '@X'",
-        "desktopTags": "wdio ./wdio.conf.desktop.ts --cucumberOpts.tagExpression",
-        "test:debug": "DEBUG=true wdio ./wdio.conf.ts",
-        "generateAllureReport": "npx allure generate allure-results --clean",
-        "openAllureReport": "npx allure open",
-        "wdio": "wdio run ./wdio.conf.ts"
+        "test": "cucumber-js --config cucumber.json --tags"
     },
     "author": "Slaw",
     "license": "ISC",
     "devDependencies": {
         "@babel/preset-env": "^7.22.6",
         "@cucumber/cucumber": "^10.6.0",
+        "@faker-js/faker": "^8.4.1",
         "@playwright/test": "^1.43.1",
         "@types/chai": "^4.3.5",
         "@types/jsdom": "^21.1.1",
         "@typescript-eslint/eslint-plugin": "^7.6.0",
         "@typescript-eslint/parser": "^7.6.0",
-        "chai": "^4.3.7",
-        "chromedriver": "123.0.1",
         "eslint": "^8.57.0",
         "global-agent": "^3.0.0",
         "prettier": "^3.0.0",

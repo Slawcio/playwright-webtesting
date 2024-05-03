@@ -48,6 +48,5 @@ export abstract class Page {
 
     public async open(pageName): Promise<void> {
         await page.goto(Environments[pageName]);
-        await page.locator('#onetrust-accept-btn-handler').click(); // cookie acceptance
     }
 }

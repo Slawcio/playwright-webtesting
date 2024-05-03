@@ -15,8 +15,8 @@ export default new class LoginPage extends Page {
         ['name input', '[data-test = register-layer-name] input'],
         ['last name input', '[data-test = register-layer-lastName] input'],
         ['email input', '[data-test = register-layer-email] input'],
-        ['password input', '[data-test = register-layer-password] input'],
-        ['password confirmation input', '[data-test = register-layer-passwordConfirm] input'],
+        ['register password input', '[data-test = register-layer-password] input'],
+        ['register password confirmation input', '[data-test = register-layer-passwordConfirm] input'],
         ['regulation consent checkbox', '[data-test = register-layer-regulationConsent] input'],
         ['confirm registration button', '[data-test = register-layer-cta]']
     ]);
