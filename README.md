@@ -31,7 +31,7 @@ user is directed to the homepage.
 ## Description
 This project implements a unique Page Factory architecture, enhancing the standard Page Object Model (POM) framework for large-scale web automation projects. The project focuses on reducing boilerplate code and improving scalability. Serving as a proof of concept, it currently has some vulnerabilities:
 - lack of IDE selector name advices 
-- possibility to type two the the same locators' names
+- possibility to type two the same locators' names
 - necessity to use IDE search for renaming locators' names. Not a big deal, but leaves room for dev error
 
 ## Key Features
