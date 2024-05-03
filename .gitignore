@@ -27,10 +27,12 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-# allure
+# reports
 allure-report
 allure-results
 performance-results
+cucumber-report.html
+playwright-report/
 
 # browserstack local
 local.log

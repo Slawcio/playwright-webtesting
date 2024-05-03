@@ -1,4 +1,4 @@
-@all @1 @login
+@all @t1 @login
 Feature: Main Page -> Login Page -> Account Page: Registration and Login
 
   @registration
