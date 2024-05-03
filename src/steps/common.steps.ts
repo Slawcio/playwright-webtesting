@@ -1,5 +1,5 @@
 import { When, Then } from '@cucumber/cucumber';
-import { ElementProvider } from "../utilities/elementProvider.ts";
+import { ElementProvider } from "../utilities/element-provider.ts";
 import { Utils } from '../utilities/utils.ts';
 import { page } from '../world.ts';
 import { expect } from '@playwright/test';

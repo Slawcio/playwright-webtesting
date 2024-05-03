@@ -21,8 +21,7 @@ user is directed to the homepage.
    • Select a product from the search results and navigate to its details page.
    • Add the product to the shopping cart.
    • Verify that the cart updates correctly with the selected item
-   Tasks:
-   Task 1: Test Implementation
+4. Task 1: Test Implementation
    • Implement automated tests in Cypress/Playwright for the outlined scenarios. Ensure the
    tests are modular and reusable.
     
