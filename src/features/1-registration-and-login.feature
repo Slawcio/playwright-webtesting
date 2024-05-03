@@ -18,7 +18,7 @@ Feature: Main Page -> Login Page -> Account Page: Registration and Login
     And I click "regulation consent checkbox"
     And I click "confirm registration button"
     Then I see "account page"
-    And I see element "my account label" displays text "Moje konto"
+    And I see "my account label" contains "Moje konto"
 
     When I click "account caret down"
     And I click "logout on caret link"
@@ -30,4 +30,4 @@ Feature: Main Page -> Login Page -> Account Page: Registration and Login
     And I type "random password generated" into "password input"
     And I click "login button"
     Then I see "account page"
-    And I see element "my account label" displays text "Moje konto"
+    And I see "my account label" contains "Moje konto"
