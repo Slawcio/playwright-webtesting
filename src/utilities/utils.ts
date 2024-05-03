@@ -1,11 +1,11 @@
-import { faker, fakerEN } from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 
 export class Utils {
 
     private static email: string | null = null;
     private static lastPassword: string | null = null;
 
-    private static getSavedValue(text: string | null, fieldName: string){
+    private static getSavedValue(text: string | null, fieldName: string): string{
         if(text !== null){
             return text;
         } else {
@@ -29,7 +29,7 @@ export class Utils {
         return texts.join('; ');
     }
 
-    public static getRandomValueBasedOnText(text: string) {
+    public static getRandomValueBasedOnText(text: string): string {
         text = text.replace("random ", "");
         switch (text) {
             case "email":
